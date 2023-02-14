@@ -1,0 +1,12 @@
+<div class="w-full flex flex-col items-center">
+  <% if !current_user %>
+    <%= inline_svg_tag "bucket", class: "h-16" %>
+    <h1 class="font-bold text-4xl text-center">BeatBucket</h1>
+    <p class="text-center">Welcome. Here you can publish your songs and start collecting online sales
+    </p>
+    <div class="flex gap-4 mt-8">
+      <%= link_to "Sign in", new_user_session_path, class: "p-3 bg-gray-200 text-gray-700 rounded-lg" %>
+      <%= link_to "Create account", new_user_registration_path, class: "p-3 bg-blue-500 text-gray-100 rounded-lg" %>
+    </div>
+  <% end %>
+</div>

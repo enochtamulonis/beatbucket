@@ -1,0 +1,10 @@
+<div data-controller="audio-player" data-audio-player-src-value="<%= url_for(song.audio) %>" class="flex justify-center">
+  <a href="#" data-action="audio-player#togglePlaying">
+    <span data-audio-player-target="play">
+      <%= inline_svg_tag "play", class: "h-8 w-8" %>
+    </span>
+    <span data-audio-player-target="pause" class="hidden">
+      <%= inline_svg_tag "pause", class: "h-8 w-8" %>
+    </span>
+  </a>
+</div>

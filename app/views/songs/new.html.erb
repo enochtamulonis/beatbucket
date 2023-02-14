@@ -1,0 +1,14 @@
+<div class="max-w-xl w-full mx-auto">
+<%= form_with model: @song do |form| %>
+  <div class="grid">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+    <br/>
+    <%= form.label :audio %>
+    <%= form.file_field :audio, accept: "audio/*" %>
+  </div>
+
+  <div class="mt-6">
+    <%= form.submit "Create song", class: "bg-blue-500 text-blue-50 p-3 rounded-lg" %>
+  </div>
+<% end %>

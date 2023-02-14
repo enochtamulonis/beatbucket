@@ -1,0 +1,9 @@
+<div class="w-full h-16 bg-gray-700 fixed top-0">
+  <div class="h-full flex items-center p-4">
+    <div class="ml-auto">
+      <% if current_user %>
+        <%= link_to "Sign out", destroy_user_session_path, data: { turbo_method: :delete }, class: "text-gray-200" %>
+      <% end %>
+    </div>
+  </div>
+</div>
