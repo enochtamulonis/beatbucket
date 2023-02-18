@@ -77,6 +77,6 @@ end
 
 gem "inline_svg", "~> 1.8"
 
-gem "devise", "~> 4.8"
+gem "devise"
 
 gem "hotwire-livereload", "~> 1.2"
