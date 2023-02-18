@@ -5,10 +5,10 @@
     <%= form.text_field :title %>
     <br/>
     <%= form.label :audio %>
-    <%= form.file_field :audio, accept: "audio/*" %>
+    <%= render "audio_form", form: form %>
   </div>
 
   <div class="mt-6">
-    <%= form.submit "Create song", class: "bg-blue-500 text-blue-50 p-3 rounded-lg" %>
+    <%= form.submit "Create song", class: "bg-blue-500 text-blue-50 p-3 rounded-lg cursor-pointer" %>
   </div>
 <% end %>

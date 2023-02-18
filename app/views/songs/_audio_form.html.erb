@@ -1,0 +1,7 @@
+<div class="dropzone dropzone-default dz-clickable" data-controller="dropzone" data-dropzone-max-file-size="1000" data-dropzone-accepted-files="audio/*" data-dropzone-max-files="1">
+  <%= form.file_field :audio, direct_upload: true, data: { dropzone_target: 'input' } %>
+  <div class="dropzone-msg dz-message needsclick">
+    <h3 class="dropzone-msg-title">Drag here to upload or click here to browse</h3>
+    <span class="dropzone-msg-desc">1 GB file size maximum. Any audio file is allowed</span>
+  </div>
+</div>
