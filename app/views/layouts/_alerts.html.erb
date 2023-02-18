@@ -1,2 +1,8 @@
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+<div class="fixed top-20 right-4">
+    <% if alert %>
+        <p class="alert bg-red-500 text-red-50 p-2 rounded-lg" data-controller="dismissible"><%= alert %></p>
+    <% end %>
+    <% if notice %>
+        <p class="notice bg-green-500 text-green-50 p-2 rounded-lg" data-controller="dismissible"><%= notice %></p>
+    <% end %>
+</div>
