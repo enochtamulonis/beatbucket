@@ -1,5 +1,8 @@
 <div class="w-full h-16 bg-gray-700 fixed top-0">
   <div class="h-full flex items-center p-4">
+    <%= link_to "/" do %>
+      <%= inline_svg_tag "bucket", class: "h-8 w-8 hover:rotate-6" %>
+    <% end %>
     <div class="ml-auto">
       <% if current_user %>
         <%= link_to "Sign out", destroy_user_session_path, data: { turbo_method: :delete }, class: "text-gray-200" %>
